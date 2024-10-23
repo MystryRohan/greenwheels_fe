@@ -2,8 +2,8 @@ import { createContext, StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 
-export const server = "http://localhost:5000/api/v1";
-// export const server = "https://greenwheels-be.onrender.com/api/v1";
+// export const server = "http://localhost:5000/api/v1";
+export const server = "https://greenwheels-be.onrender.com/api/v1";
 export const Context = createContext({ isAuthenticated: false });
 
 const AppWrapper = () => {
