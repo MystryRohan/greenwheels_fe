@@ -1,0 +1,69 @@
+.fares-container {
+  width: 100%;
+  height: 90vh;
+}
+.fares-container h1 {
+  text-align: center;
+}
+.fares-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.fare {
+  width: 90%;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-left: 10px solid black;
+  border-right: 10px solid #f0f0f0;
+  margin: 1rem;
+  border-radius: 12px;
+}
+.fare label {
+  font-size: 0.9rem;
+}
+.fare div {
+  padding-top: 0.5rem;
+}
+.from-to {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.from-to button {
+  background-color: black;
+  height: 40px;
+  width: 100px;
+  color: white;
+  border: none;
+  font-weight: 400;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.get-fare-btn {
+  display: block;
+  margin: auto;
+}
+.inf-scroll-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10vh;
+}
+@media screen and (max-width: 475px) {
+  .fares-container {
+    height: auto;
+  }
+  .inf-scroll-div {
+    padding: 0;
+    height: 90vh !important;
+    /* background-color: red; */
+  }
+  .inf-scroll-div h1 {
+    padding-top: 1rem;
+  }
+  .fares-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}

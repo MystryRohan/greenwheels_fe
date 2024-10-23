@@ -1,0 +1,49 @@
+.wheelsfound-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-section h1 {
+  color: white;
+  text-align: center;
+  width: 50vw;
+  height: 70vh;
+  background-image: url("destination-map.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0px 100px 120px black;
+}
+.driver-profile {
+  align-items: center;
+  display: flex;
+  height: 5rem;
+  width: 20rem;
+  background-color: #d1d1d1;
+}
+.driver-profile img {
+  margin: 0 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.draw-route {
+  border-radius: 12px;
+  width: 10px;
+  height: 40vh;
+  background-color: #212121;
+}
+.ride-details {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 475px) {
+  .wheelsfound-container {
+    flex-direction: column;
+  }
+  .main-section {
+    display: none;
+  }
+}
